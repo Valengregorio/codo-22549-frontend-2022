@@ -4,119 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /*selector hijo*/
-        p > strong {
-            color:brown
-        }
-        h1 + p {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: blueviolet;
-        }
-        h2 ~ p {
-            color: aqua;
-            background-color: blueviolet;
-        }
-        a:visited {
-            color: rgb(43, 205, 226);
-        }
-        a:active {
-            color:brown
-        }
-        h1:hover {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        img:hover {
-            width: 310px;;
-        }
-        /*first child*/
-
-        div.primerhijo {
-            padding: 25px;
-    text-align: center;
-        }
-
-        div.primerhijo p {
-            display:inline
-            
-        }
-        div.primerhijo p:first-child {
-            color: blueviolet;
-            font: size 16px;;
-            
-        }
-         /*last child*/
-
-         div.primerhijo {
-            padding: 25px;
-    text-align: center;
-        }
-
-        div.primerhijo p {
-            display:inline
-            
-        }
-        div.primerhijo p:last-child {
-            color: rgb(43, 205, 226);
-            font: size 16px;;
-            
-        }
-        /*even son pares*/
-        ol li:nth-child(even) {
-            color: rgb(161, 40, 119);
-        }
-        body > h3 {
-            color: brown;
-        }
-        
-
-
-    </style>
+    <title>Clase 10 - Flexbox</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h3>VALENTINA</h3>
-    <p> 
-        Selector de hijos <strong> PADRE > HIJO </strong>
-    </p>
-    <p> 
-        texto <strong> texto strong </strong> sigue el texto
-    </P>
-    <div>
-        <img src="../imagen.jpg">
-    </div>
-    <div>
-        <h1> hermanos adyacentes </h1>
-        <p> texto 1 </p>
-        <p> texto 2 </p>
-    </div>
-    <div>
-        <h2> hermanos generales </h2>
-        <p> texto 1 </p>
-        <p> texto 2 </p>
-    </div>
-    <!--pseudo clases -->
-    <ul>
-        <li>
-            <a href="https://www.google.com"> Google </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com"> Facebook </a>
-        </li>
-    </ul>
-    <!--first child-->
-    <div class="primerhijo">
-        <p> p1 </p>
-        <p> p2 </p>
-        <p> p3 </p>
-        <p> p4 </p>
-    </div>
-    <ol>
-        <li> Primero </li>
-        <li> Segundo </li>
-        <li> Tercero </li>
-    </ol>
-
-
+    <main>
+        <!--Esto lo usamos para practicar al inicio
+        <section>
+            <div class="container">
+                <div> 1 </div>
+                <div> 2 </div>
+                <div> 3 </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-flex">
+                <div class="flex-item"> <p> 1 </p> </div>
+                <div class="flex-item"> <p> 2 </p> </div>
+                <div class="flex-item"> <p> 3 </p> </div>
+                <div class="flex-item"> <p> 4 </p> </div>
+            </div>
+        </section>
+        -->
+        <section id="sec1"> 
+            <div class="content-text">
+                <h2> Section 1 </h2>
+                <!--lore10:crea un lorem de 10 palabras-->
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <a href="#sec2"> Section 2 </a>
+            </div>
+            <img src="img/im.svg">
+        </section>
+        <section id="sec2"> 
+            <div class="content-text">
+                <h2> Section 2 </h2>
+                <!--lore10:crea un lorem de 10 palabras-->
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <a href="#sec3"> Section 3 </a>
+            </div>
+            <img src="img/ima.svg">
+        </section>
+        <section id="sec3"> 
+            <div class="content-text">
+                <h2> Section 3 </h2>
+                <!--lore10:crea un lorem de 10 palabras-->
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <a href="#sec1"> Section 1 </a>
+            </div>
+            <img src="img/imag.svg">
+        </section>
+    </main>
 </body>
 </html>
