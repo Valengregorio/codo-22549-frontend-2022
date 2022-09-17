@@ -1,0 +1,16 @@
+p {
+   size: 50px;
+   font-family: 'Roboto', sans-serif;
+}
+body {
+   background-color: aqua;
+}
+*{
+   font-family: 'Roboto', sans-serif;
+}
+main .html{
+   background-color: blueviolet;
+}
+main section.html{
+   background-color: brown !important;
+}
